@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novara Looks</title>
+  <style>
+    body {
+      background-color: rgb(245,245,220);
+      font-family: Arial, sans-serif;
+    }
+
+    h5 {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .galeri {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .kıyafet {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      width: 180px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 380px; /* Sabit yükseklik */
+      text-align: center;
+    }
+
+    .kıyafet img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .fiyat {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .buton {
+      margin-top: auto;
+      padding: 8px 0;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buton:hover {
+      background-color: #444;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin: 40px 0;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function sepeteEkle() {
+      alert("Ürün sepete eklendi!");
+    }
+  </script>
+</head>
+<body>
+
+  <h5 id="Galeri">#NovaraLooks</h5>
+
+  <div class="galeri">
+    <!-- Kıyafet kutuları -->
+    <div class="kıyafet">
+      <img src="images/kıyafet 1.jpg" alt="Kıyafet 1">
+      <div class="fiyat">479₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/kıyafet 2.jpg" alt="Kıyafet 2">
+      <div class="fiyat">519₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/kıyafet 3.jpg" alt="Kıyafet 3">
+      <div class="fiyat">569₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/korse.jpg" alt="Korse">
+      <div class="fiyat">329₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/pant..jpg" alt="Pantolon">
+      <div class="fiyat">449₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/trençkot.jpg" alt="Trençkot">
+      <div class="fiyat">849₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/elbise.jpg" alt="Elbise 2">
+      <div class="fiyat">699₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/ayakkabı 2.jpg" alt="Ayakkabı">
+      <div class="fiyat">299₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/takım.jpg" alt="Takım">
+      <div class="fiyat">799₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/bluz.jpg" alt="Bluz">
+      <div class="fiyat">349₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/ayakkabı.jpg" alt="Ayakkabı 2">
+      <div class="fiyat">555₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+    <div class="kıyafet">
+      <img src="images/elb.jpg" alt="Kıyafet 2">
+      <div class="fiyat">519₺</div>
+      <button class="buton" onclick="sepeteEkle()">Satın Al</button>
+    </div>
+  </div>
+
+  <a href="index.html">Anasayfaya Dön</a>
+
+</body>
+</html>

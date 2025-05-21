@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş Yap</title>
+</head>
+<body style="background-color: rgb(245,245,220);">
+
+  <h2>Novara</h2>
+  <h3>OTURUM AÇIN VEYA HESAP OLUŞTURUN</h3>
+  <h1>ZATEN BİR HESABIN VAR MI? GİRİŞ YAP</h1>
+
+  <form id="loginForm">
+    <p><label for="email">E-posta</label><br>
+    <input type="email" id="email" placeholder="E-postanızı girin" required></p>
+
+    <p><label for="password">Parola</label><br>
+    <input type="password" id="password" placeholder="Parolayı girin" required></p>
+
+    <button type="submit">Oturum Aç</button>
+    <button type="button" onclick="window.location.href='form2.html'">Hesap Oluştur</button>
+  </form>
+
+  <a href="index.html">Anasayfaya Dön</a>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      const savedEmail = localStorage.getItem("novara_email");
+      const savedPassword = localStorage.getItem("novara_password");
+
+      if (email === savedEmail && password === savedPassword) {
+        alert("Hesaba başarıyla girildi!");
+        // Giriş başarılıysa yönlendirme yapılabilir
+        window.location.href = "index.html";
+      } else {
+        alert("E-posta veya parola yanlış!");
+      }
+    });
+  </script>
+
+</body>
+</html>
